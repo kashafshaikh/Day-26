@@ -41,7 +41,7 @@ function averageOfNumbersInString(str: string):number{
 
     for(let i=0; i<str.length; i++){
         let char = str.charAt(i);
-
+        
     if(char >= '0' && char <= '9'){
         currentNumber= currentNumber*10 + (char.charCodeAt(0)-'0'.charCodeAt(0));
         isNumberActive = true;
@@ -59,7 +59,7 @@ function averageOfNumbersInString(str: string):number{
         sum += currentNumber;
         count++;
     }
-    
+
     return count > 0 ? sum / count : NaN;
 }
 console.log(averageOfNumbersInString('The numbers are 12, 15, and 20.')); // Output: 15.666...
